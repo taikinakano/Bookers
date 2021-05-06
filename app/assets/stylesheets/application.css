@@ -13,3 +13,14 @@
  *= require_tree .
  *= require_self
  */
+ header {
+   margin:33px;
+ }
+
+ .box {
+   margin:33px;
+ }
+
+ .text1, .text2 {
+   margin-bottom:33px;
+ }
