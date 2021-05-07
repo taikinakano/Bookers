@@ -1,2 +1,16 @@
-<h1>Books#show</h1>
-<p>Find me in app/views/books/show.html.erb</p>
+<main class="show">
+ <p class="show-head">Book was successfully created</p>
+
+ <div class="show-title">
+   <p><span>Title:</span> <%= @book.title %> </p>
+ </div>
+ <div class="show-body">
+   <p><span>Body:</span> <%= @book.body %> </p>
+ </div>
+
+<div class="show-help">
+ <div class="show-edit">Edit</div>
+ <div class="show-back">Back</div>
+</div>
+
+</main>

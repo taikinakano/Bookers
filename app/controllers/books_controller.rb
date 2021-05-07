@@ -6,6 +6,7 @@ class BooksController < ApplicationController
   end
 
   def show
+    @book = Booker.find(params[:id])
   end
 
   def new
@@ -15,7 +16,7 @@ class BooksController < ApplicationController
   def create
     book = Booker.new(booker_params)
     book.save
-    redirect_to books_path
+    redirect_to books_path(book.id)
   end
 
   def edit
