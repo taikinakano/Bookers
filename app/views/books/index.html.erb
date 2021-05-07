@@ -1,13 +1,4 @@
 
-  <!--@books.each do |book| %>-->
-
-       <!--<td><= book.title %></td>
-       <td><= book.body %></td>-->
-
-   <!--< end %>-->
-
-
-
   <body>
     <p id="notice"></p>
     <h1>Books</h1>
@@ -21,13 +12,15 @@
   </thead>
 
   <tbody>
+    <% @books.each do |book| %>
       <tr>
-        <td>s</td>
-        <td>s</td>
+        <td><span><%= book.title %></span></td>
+        <td><span><%= book.body %></span></td>
         <td>Show</td>
         <td>Edit</td>
         <td>Destroy</td>
       </tr>
+    <% end %>
   </tbody>
 </table>
 
