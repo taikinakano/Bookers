@@ -24,3 +24,14 @@
  .text1, .text2 {
    margin-bottom:33px;
  }
+
+ /*index*/
+ body {
+  background-color: #fff;
+  color:#333;
+  font-family: verdana, arial, helvatica, sanseserif;
+ }
+
+table {
+ width: auto;
+}

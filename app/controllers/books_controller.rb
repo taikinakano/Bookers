@@ -1,9 +1,5 @@
 class BooksController < ApplicationController
   def index
-    #@books = Bookers.show(bookers_params)
-     
-    #投稿機能↓
-
   end
 
   def show
@@ -14,9 +10,9 @@ class BooksController < ApplicationController
   end
 
   def create
-    book = Bookers.index(bookers_params)
+    book = Bookers.new(bookers_params)
     book.save
-    rediret_to books_path
+    redirect_to books_path(book.id)
   end
 
   def edit
@@ -24,6 +20,6 @@ class BooksController < ApplicationController
 
   private
   def bookers_params
-    params.require(:bookers).permit(:title, :body)
+    params.permit(:title, :body)
   end
 end
