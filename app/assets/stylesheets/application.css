@@ -36,6 +36,11 @@ table {
  width: auto;
 }
 
+/*new*/
+.new-book-create {
+ margin-top:10px;
+}
+
 /*show*/
 .show {
  margin-left: 33px;

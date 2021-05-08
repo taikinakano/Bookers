@@ -16,7 +16,7 @@
       <tr>
         <td><span><%= book.title %></span></td>
         <td><span><%= book.body %></span></td>
-        <td>Show</td>
+        <td><%= link_to "show", book_path(book) %></td>
         <td><%= link_to "Edit", edit_book_path(book) %></td>
         <td><%= link_to "Delete", book_path(book), method: :delete %></td>
       </tr>
@@ -25,13 +25,18 @@
 </table>
 
 <h1>New book</h1>
+
 <%= form_with model:@book, local:true do |f| %>
+<div class="new-book-title">Title</div>
  <div class='new-book'>
    <%= f.text_field :title %>
  </div>
+ <div class="new-book-body">Body</div>
  <div class="actions">
    <%= f.text_area :body %>
+   <div class="new-book-create">
    <%= f.submit 'Create book' %>
+   <div>
  </div>
  <% end %>
 </body>
