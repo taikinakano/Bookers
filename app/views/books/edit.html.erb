@@ -2,13 +2,19 @@
   <div class="edit">
     <%= form_with model:@book, local: true do |f| %>
     <h1>Editing Book</h1>
-    <h4>Title</h4>
+    <div class="edit-title-block">
+    <div class="edit-title">Title</div>
     <%= f.text_field :title %>
-    <h4>Body</h4>
+    </div>
+    <div class="edit-body">Body</div>
     <%= f.text_area :body %>
+    <div class="edit-update-book">
     <%= f.submit 'Update Book' %>
-    <%= link_to "show", book_path %>
+    </div>
+    <div class="edit-box">
+    <div class="edit-show"><%= link_to "show", book_path %></div>
     <%= link_to "Back", books_path %>
+    </div>
     <% end %>
 
   </div>

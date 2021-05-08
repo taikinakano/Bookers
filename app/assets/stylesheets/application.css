@@ -65,3 +65,25 @@ span {
  padding-left:5px;
 }
 
+/*edit*/
+.edit {
+  margin:33px;
+}
+
+.edit-title-bottom {
+ margin-bottom:10px;
+}
+
+.edit-update-book {
+ margin:10px 0;
+}
+
+.edit-box {
+ display:flex;
+}
+
+.edit-show {
+ margin-right:10px;
+ border-right:2px solid black;
+ padding-right:5px;
+}
