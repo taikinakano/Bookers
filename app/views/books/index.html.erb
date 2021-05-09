@@ -18,7 +18,7 @@
         <td><span><%= book.body %></span></td>
         <td><%= link_to "show", book_path(book) %></td>
         <td><%= link_to "Edit", edit_book_path(book) %></td>
-        <td><%= link_to "Delete", book_path(book), method: :delete %></td>
+        <td><%= link_to "Destroy", book_path(book), method: :delete %></td>
       </tr>
     <% end %>
   </tbody>
@@ -36,7 +36,7 @@
  <div class="actions">
    <%= f.text_area :body %>
    <div class="new-book-create">
-   <%= f.submit 'Create book' %>
+   <%= f.submit 'Create Book' %>
    <div>
  </div>
  <% end %>

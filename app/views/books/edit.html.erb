@@ -2,6 +2,7 @@
   <div class="edit">
     <%= form_with model:@book, local: true do |f| %>
     <h1>Editing Book</h1>
+    <%= render 'error_form', book: @book  %>
     <div class="edit-title-block">
     <div class="edit-title">Title</div>
     <%= f.text_field :title %>
